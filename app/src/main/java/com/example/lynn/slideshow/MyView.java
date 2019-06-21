@@ -1,6 +1,7 @@
 package com.example.lynn.slideshow;
 
 import android.content.Context;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import static com.example.lynn.slideshow.MainActivity.*;
@@ -28,6 +29,21 @@ public class MyView extends RelativeLayout {
                            R.drawable.tiger,
                            R.drawable.turtle,
                            R.drawable.zebra};
+
+        view = new ImageView(context);
+
+        LayoutParams params = new LayoutParams(500,500);
+
+        params.leftMargin = 500;
+        params.topMargin = 500;
+
+        view.setLayoutParams(params);
+
+        view.setImageDrawable(getResources().getDrawable(drawables[0]));
+
+        view.setOnTouchListener(listener);
+
+        addView(view);
 
     }
 

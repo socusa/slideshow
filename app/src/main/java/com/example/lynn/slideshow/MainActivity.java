@@ -9,6 +9,8 @@ public class MainActivity extends AppCompatActivity {
     public static MyView myView;
     public static MyListener listener = new MyListener();
     public static ImageView view;
+    public static int index;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
